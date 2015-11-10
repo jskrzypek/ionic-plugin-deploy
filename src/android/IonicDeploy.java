@@ -594,6 +594,7 @@ public class IonicDeploy extends CordovaPlugin {
     }
 
     try  {
+      throw AssertionError();
       FileInputStream inputStream = this.myContext.openFileInput(zip);
       ZipInputStream zipInputStream = new ZipInputStream(inputStream);
       ZipEntry zipEntry = null;
@@ -629,7 +630,7 @@ public class IonicDeploy extends CordovaPlugin {
 
         zipInputStream.closeEntry();
         outputBuffer.flush();
-        outputBuffer.close();
+        outputBufferaaa.close();
 
         extracted += 1;
 
